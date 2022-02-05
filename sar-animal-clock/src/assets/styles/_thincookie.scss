@@ -1,0 +1,28 @@
+@include ear-animation(left-ear-dog-thincookie, 0, 2deg);
+@include ear-animation(right-ear-dog-thincookie, 0, -2deg);
+@include ping-pong-animation(tail-dog-thincookie, 20deg, -20deg);
+
+[id="thincookie"] {
+  #right-leg {
+    transform-origin: 438px 745px;
+  }
+
+  #left-leg {
+    transform-origin: 543px 745px;
+  }
+
+  #left-ear {
+    animation: left-ear-dog-thincookie 2s ease-in-out infinite;
+    transform-origin: 574px 174px;
+  }
+
+  #right-ear {
+    animation: right-ear-dog-thincookie 2s ease-in-out infinite;
+    transform-origin: 445px 197px;
+  }
+
+  #tail {
+    transform-origin: 544px 685px;
+    animation: tail-dog-thincookie 2s ease-in-out infinite;
+  }
+}
